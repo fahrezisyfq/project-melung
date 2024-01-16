@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css2?family=Gabarito&family=Roboto:wght@500&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    /* height: 1000px; */
+    font-family: Gabarito, sans-serif;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    /* height: 100vh;
+    line-height: 1,5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+}
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #8fa18b;
+    align-items: center;
+    padding: 20px 100px;
+}
+header .logo {
+    position: relative;
+    font-family: Gabarito, sans-serif;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    position: relative;
+    list-style: none;
+}
+header ul li a {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.6s;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+.humberger {
+    display: none;
+    cursor: pointer;
+}
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+.Contact {
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(../Image/bgContact.png);
+    background-size: cover;
+}
+
+.Contact .konten {
+    max-width: 800px;
+    text-align: center;
+}
+
+.Contact .konten h2 {
+    color: #fff;
+    font-size: 36px;
+    font-weight: 500;
+}
+.Contact .konten p {
+    color: #fff;
+    font-weight: 300;
+}
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.container .kontakinfo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.container .kontakinfo .box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.container .kontakinfo .box .icon {
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    font-size: 22px;
+}
+.container .kontakinfo .box .text {
+    display: flex;
+    margin-left: 20px;
+    color: #fff;
+    font-size: 16px;
+    flex-direction: column;
+    font-weight: 300;
+}
+.container .kontakinfo .box .text h3 {
+    font-weight: 500px;
+    color: #9db997;
+}
+.kontakform {
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+}
+.kontakform h2 {
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+.kontakform .inputBox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.kontakform .inputBox input,
+.kontakform .inputBox textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.kontakform .inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+.kontakform .inputBox input:focus ~ span,
+.kontakform .inputBox input:valid ~ span,
+.kontakform .inputBox textarea:focus ~ span,
+.kontakform .inputBox textarea:valid ~ span {
+    color: #8fa18b;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.kontakform .inputBox input[type="submit"] {
+    width: 100px;
+    background: #8fa18b;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.footer {
+    padding: 30px 0;
+    background-color: #8fa18b;
+}
+.footer .socialmedia {
+    text-align: center;
+    padding-bottom: 25px;
+    color: #fff;
+}
+.footer .socialmedia a {
+    font-size: 24px;
+    color: inherit;
+    border: 1px solid #ccc;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0.8px;
+    opacity: 0.75;
+}
+.footer .socialmedia a:hover {
+    opacity: 0.9;
+}
+.footer ul {
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+    color: #fff;
+}
+.footer ul li {
+    display: inline-block;
+    padding: 0 15px;
+}
+.footer ul li a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+}
+.footer ul li a:hover {
+    opacity: 1;
+}
+.footer .copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+}
+@media (max-width: 768px) {
+    .humberger {
+        display: block;
+    }
+    .humberger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .humberger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .humberger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    header .logo {
+        font-size: 1em;
+    }
+    header ul {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background: hsla(0, 0%, 100%, 0.452);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+    header ul li {
+        margin: 16px 0;
+    }
+    header ul li a {
+        color: black;
+    }
+    header ul.active {
+        left: 0;
+    }
+}
+@media (max-width: 991px) {
+    .Contact {
+        padding: 50px;
+    }
+    .container {
+        flex-direction: column;
+    }
+    .container .kontakinfo {
+        margin-bottom: 40px;
+    }
+    .container .kontakinfo,
+    .kontakform {
+        width: 100%;
+    }
+}
